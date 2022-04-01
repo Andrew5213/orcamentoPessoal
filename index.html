@@ -38,7 +38,7 @@
               <a class="nav-link" href="consulta.html">Consulta</a>
             </li>
           </ul>
-          
+
         </div>
       </div>
     </nav>
@@ -75,14 +75,14 @@
             <option value="12">Dezembro</option>
           </select>
         </div>
-        
+
         <div class="col-md-2">
           <input type="text" class="form-control" placeholder="Dia" id="dia" />
         </div>
 
         <div class="col-md-6">
           <select class="form-control" id="tipo">
-            <option>Tipo</option>
+            <option value="">Tipo</option>
             <option value="1">Alimentação</option>
             <option value="2">Educação</option>
             <option value="3">Lazer</option>
@@ -108,6 +108,31 @@
         </div>
       </div>
     </div>
-  </body>	
+    <!-- Button trigger modal -->
+    
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="erroGravacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header text-danger">
+            <h5 class="modal-title" id="exampleModalLabel">Erro na gravação</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="modal_conteudo">
+            Existem campos obrigatorios que não foram preenchidos
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Voltar e corrigir</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 
 </html>
